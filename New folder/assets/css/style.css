@@ -1357,7 +1357,7 @@ body {
   background-color: #000;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.69);
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -1365,9 +1365,7 @@ body {
 
 .v-light body {
   color: #0009;
- 
 }
-
 
 button,
 input,
@@ -1386,7 +1384,7 @@ h6 {
   color: #fff;
   font-weight: 700;
   line-height: 1.2;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1452,7 +1450,7 @@ span, a {
 
 blockquote cite {
   font-style: normal;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 pre {
@@ -1498,7 +1496,7 @@ a:focus {
                    Core
 -------------------------------------------------------- */
 body {
-  background-color: rgb(19, 19, 19);
+  background-color: #000;
   overflow: hidden;
   -webkit-transition: background-color 0.5s ease-out;
   -o-transition: background-color 0.5s ease-out;
@@ -1681,6 +1679,7 @@ body > * {
   letter-spacing: 2px;
   font-size: 24px;
   font-weight: 600;
+  color: white !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1725,6 +1724,7 @@ body > * {
   text-transform: uppercase;
   position: relative;
   padding-left: 80px;
+  color: white !important;
 }
 
 .one-title .title-sub-container .title-sub:before, .one-title .title-sub-container .title-sub:after {
@@ -1746,7 +1746,7 @@ body > * {
 }
 
 .v-light .one-title .title-sub-container .title-sub:before {
-  background-color: #000;
+  background-color:white;
 }
 
 .one-title .title-sub-container .title-sub:after {
@@ -1762,9 +1762,10 @@ body > * {
 
 .one-title .title-main {
   font-size: 42px;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.01em;
+  color: white;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2872,7 +2873,7 @@ a:hover, a:active {
 .site-header {
   display: block;
   position: fixed;
-  width: 90%;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 20px;
   z-index: 9000;
@@ -2880,6 +2881,7 @@ a:hover, a:active {
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
   top: 0;
+  right: 20%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -2970,7 +2972,7 @@ a:hover, a:active {
 }
 
 .v-light.menu-light .site-header .extend-container .main-navigation ul li {
-  color: #000;
+  color: #fff;
 }
 
 .site-header .extend-container .main-navigation ul li:last-child {
@@ -3055,6 +3057,10 @@ a:hover, a:active {
   top: 15px;
 }
 
+.custom-drop-down{
+  color: white;
+}
+
 .site-header ul li a:after {
   content: '';
   position: absolute;
@@ -3092,8 +3098,8 @@ a:hover, a:active {
   display: none;
 }
 
-body.hamburger-menu {
-  display: block;
+body.hamburger-menu .site-header {
+  /* display: block; */
 }
 
 body.hamburger-menu .header-top {
@@ -3245,6 +3251,8 @@ body.hamburger-menu .header-top {
   max-width: 2560px;
   padding: 22px 50px;
   margin: auto;
+  background-color: #090909;
+  height: 80px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3321,7 +3329,7 @@ body.hamburger-menu .header-top {
   position: relative;
   display: inline-block;
   margin-left: 10px;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   top: -21px;
   color: #fff;
@@ -3330,7 +3338,7 @@ body.hamburger-menu .header-top {
 }
 
 .v-light.menu-light .header-top .header-container .menu-icon .text-menu {
-  color: #000;
+  color: #fff;
 }
 
 .header-top .header-container .menu-icon .text-menu > div {
@@ -3886,7 +3894,7 @@ body.nav-active .header-top .header-container .menu-icon:hover .text-menu .text-
 .nav__list-item {
   position: relative;
   display: block;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   letter-spacing: 3px;
   font-weight: bold;
@@ -4525,12 +4533,12 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .next-project + footer a,
 .next-project + footer p {
-  color: #fff;
+  color: #0009;
 }
 
 .v-light .next-project + footer a, .v-light
 .next-project + footer p {
-  color: #fff;
+  color: #0009;
 }
 
 .next-project.next-project-image {
@@ -4602,8 +4610,9 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .next-project .project-title .title-text-header .title-text-header-inner {
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
+
 }
 
 .next-project .project-title .title-text-header .title-text-header-inner span {
@@ -4961,7 +4970,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .intro-project .title-cover {
   position: absolute;
   width: 100%;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 10vw;
   font-weight: 600;
   text-align: center;
@@ -5605,14 +5614,19 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   font-size: 42px;
   line-height: 1.33;
   margin-bottom: 30px;
+  font-weight: 500;
 }
+
+.vertical-title h6{]
+font-weight: 200 !important;
+} 
 
 .box-gallery-vertical .box-info {
   padding-left: 50px;
 }
 
 .box-gallery-vertical h6 {
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -5725,7 +5739,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .our-services {
   position: relative;
-  background-color: #9370DB;
+  background-color: mediumpurple;
   padding: 50px 0;
 }
 
@@ -5755,8 +5769,11 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   background-color: #bebebe;
 }
 
+
 .our-services .services-item p {
   max-width: 447px;
+  color: white !important;
+  font-weight: 400;
 }
 
 .our-client {
@@ -6371,7 +6388,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: #090909; */
+  background-color: #090909;
 }
 
 .v-light .intro-about .background-mask .background-mask-bg {
@@ -6382,10 +6399,9 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   text-align: right;
   margin-bottom: 40px;
   font-size: 42px;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: #9370DB;
 }
 
 .intro-about .intro-content-text h2.dsn-move-section:not([data-dsn-responsive]) {
@@ -6462,9 +6478,13 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .intro-about .intro-content-text p {
-  max-width: 370px;
-  margin-bottom: 30px;
-  letter-spacing: 0.4px;
+  /* max-width: 370px; */
+  margin-bottom: 20px;
+  letter-spacing: 0.6px;
+  text-align: justify;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-weight: 400;
+  color: #141414;
 }
 
 .intro-about .intro-content-text p[data-dsn-animate="animate"] > span {
@@ -6479,9 +6499,9 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   font-size: 120px;
   line-height: 1.2;
   float: left;
-  font-weight: bold;
+  font-weight: 500;
   margin-right: 20px;
-  color: #9370DB;
+  color: #fff;
 }
 
 .v-light .intro-about .intro-content-text .exper .numb-ex > span {
@@ -6491,8 +6511,6 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .intro-about .intro-content-text .exper h4 {
   font-size: 18px;
   margin-top: 40px;
-  color: #9370DB;
-  font-weight: 700;
 }
 
 .intro-about .img-box {
@@ -6856,7 +6874,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   opacity: 0.9;
 }
 
@@ -7326,12 +7344,13 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #9370db;
+  background: #090909;
   z-index: -1;
 }
 
 .v-light .our-news .item-new .content .background {
-  background: #e6e6e6;
+  /* background: #e6e6e6; */
+  background: mediumpurple;
 }
 
 .our-news .item-new .content h5 {
@@ -7357,7 +7376,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .our-news .item-new .content .cta a {
   color: #fff;
   font-size: 22px;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
@@ -9008,7 +9027,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .headefr-fexid .project-title .title-text-header .title-text-header-inner {
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
 }
 
@@ -9168,10 +9187,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .header-hero .contenet-hero {
   position: relative;
   width: 100%;
-  padding: 150px 0 100px 0;
-  background-image: url(../img/bg-trans.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 150px 0 120px 0;
 }
 
 .header-hero h5 {
@@ -9889,7 +9905,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .dsn-slider .nav-slider .swiper-slide .content p {
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   opacity: 0.8;
 }
@@ -10008,7 +10024,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .dsn-slider-content .slide-content .slide-content-inner .title-text-header .title-text-header-inner {
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   z-index: 0;
   font-size: 65px;
@@ -10937,7 +10953,7 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   opacity: 0.9;
 }
 
@@ -11081,7 +11097,7 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   opacity: 0.9;
 }
 
@@ -11742,13 +11758,13 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
 -------------------------------------------------------- */
 .box-info-contact {
   position: relative;
-  /* background-color: #090909; */
+  background-color: #090909;
   height: 100%;
   padding: 30px;
 }
 
 .v-light .box-info-contact {
-  background-color: #e6e6e6;
+  background-color: mediumpurple;
 }
 
 @media only screen and (max-width: 991px) {
@@ -11776,7 +11792,7 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
 }
 
 .box-info-contact h5 {
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -12223,12 +12239,12 @@ footer p {
   letter-spacing: 4px;
   line-height: 1.6;
   font-variant-numeric: proportional-nums;
-  font-family: "poiret one", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .v-light footer a, .v-light
 footer p {
-  color: #0009;
+  /* color: #0009; */
 }
 
 @media only screen and (max-width: 767px) {
@@ -12327,12 +12343,12 @@ footer .copyright-social ul li:last-child {
 }
 
 .footer {
-  background-color: #090909;
+  background-color: #141414;
 }
 
-.v-light .footer {
+/* .v-light .footer {
   background-color: #e6e6e6;
-}
+} */
 
 .footer .footer-links {
   padding-top: 80px;
@@ -12357,7 +12373,7 @@ footer .copyright-social ul li:last-child {
 }
 
 .v-light .footer .footer-links .footer-title {
-  color: #000;
+  color: #fff;
 }
 
 .footer .footer-links .footer-title::after {
@@ -12371,7 +12387,7 @@ footer .copyright-social ul li:last-child {
 }
 
 .v-light .footer .footer-links .footer-title::after {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .footer .footer-links .footer-block.col-menu ul li {
@@ -12379,7 +12395,6 @@ footer .copyright-social ul li:last-child {
   font-weight: 600;
   margin-bottom: 10px;
   overflow: hidden;
-  text-align: left !important;
 }
 
 .footer .footer-links .footer-block.col-menu ul li:last-of-type {
@@ -12388,6 +12403,7 @@ footer .copyright-social ul li:last-child {
 
 .footer .footer-links .footer-block.col-menu ul li a {
   font-weight: 600;
+  color: rgb(160, 152, 152);
 }
 
 .footer .footer-links .footer-block.col-contact p {
@@ -12511,6 +12527,7 @@ footer .copyright-social ul li:last-child {
 
 .footer .footer-links .footer-block .footer-social ul li a i {
   font-size: 12px;
+  color: rgb(160, 152, 152);
 }
 
 .footer .copyright {
@@ -12581,164 +12598,6 @@ footer .copyright-social ul li:last-child {
   color: #000;
 }
 
-
-* {
-  box-sizing: border-box;
-}
-/* slider1 */
-/* Create three columns of equal width */
- .columns {
-  float: left;
-  width: 25%;
-  padding: 8px;
-}
-
-/* Style the list */
-/* .price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-} */
-
-/* Add shadows on hover */
-/* .price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-} */
-
-/* Pricing header */
-/* .price .header {
-  background-color: rgb(82, 113, 114);
-  color: white;
-  font-size: 25px;
-} */
-
-/* List items */
-/* .price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
-}  */
-
-/* Grey list item */
-/* .price .grey {
-  background-color: rgb(97, 68, 68);
-  font-size: 20px;
-} */
-
-/* The "Sign Up" button */
-/* .button {
-  background-color: #030516;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-} */
-
-/* Change the width of the three columns to 100%
-(to stack horizontally on small screens) */
-/* @media only screen and (max-width: 600px) {
-  .columns {
-    width: 100%;
-  }
-} */
-
-/* slider2 */
-/* html {
-  background: rgb(246, 248, 248);
-
-
-body {
-  padding: 40px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-
-
-.pricing{
-  overflow: auto;
-}
-
-.promos {
-  width: 800px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-.promo {
-  width: 250px;
-  background: #000;
-  color: #f9f9f9;
-  float: left;
-}
-
-.deal {
-  padding: 10px 0 0 0;
-}
-
-.deal span {
-  display: block;
-  text-align: center;
-}
-
-.deal span:first-of-type {
-  font-size: 23px;
-}
-
-.deal span:last-of-type {
-  font-size: 13px;
-}
-
-.promo .price {
-  display: block;
-  width: 250px;
-  background: #292b2e;
-  margin: 15px 0 10px 0;
-  text-align: center;
-  font-size: 23px;
-  padding: 17px 0 17px 0;
-}
-
-ul {
-  display: block;
-  margin: 20px 0 10px 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
-  color: #999999;
-}
-
-li {
-  display: block;
-  margin: 10px 0 0 0;
-}
-
-button {
-  border: none;
-  border-radius: 40px;
-  background: #292b2e;
-  color: #f9f9f9;
-  padding: 10px 37px;
-  margin: 10px 0 20px 60px;
-}
-
-.scale {
-  transform: scale(1.2);
-  box-shadow: 0 0 4px 1px rgba(20, 20, 20, 0.8);
-}
-
-.scale button {
-  background: #64AAA4;
-}
-
-.scale .price {
-  color: #64AAA4;
-} */
-
 /* slider3 */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 *, *:before, *:after {
@@ -12802,7 +12661,7 @@ button {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: relative;
   left: -1500px;
   -webkit-animation: 1.5s cubic-bezier(0.53, 0.2, 0.54, 1.33) 0s 1 slidein;
@@ -12884,6 +12743,9 @@ button {
 .card ul li {
   font-size: 0.8em;
   padding-bottom: 10px;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .card ul li:first-of-type {
   padding-top: 10px;
@@ -12912,7 +12774,7 @@ button {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #9370db;
+  color:#535353;
 }
 .card h3 span {
   font-weight: 400;
@@ -12921,5 +12783,11 @@ button {
 
 .cell{
   color:mediumpurple;
+}
+
+.pricing h2{
+  font-weight: 500;
+  line-height: 1.6;
+  color: mediumpurple;
 }
 /*# sourceMappingURL=style.css.map */
