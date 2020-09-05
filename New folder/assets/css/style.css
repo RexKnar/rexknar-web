@@ -2991,6 +2991,7 @@ a:hover, a:active {
   -webkit-animation: shine 1s infinite;
   animation: shine 1s infinite;
   line-height: 15px;
+  font-weight: 200;
 }
 
 .site-header .extend-container .main-navigation ul li a:hover {
@@ -3334,7 +3335,7 @@ body.hamburger-menu .header-top {
   display: inline-block;
   margin-left: 10px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 200;
   top: -21px;
   color: #fff;
   text-transform: uppercase;
@@ -6164,6 +6165,7 @@ font-weight: 200 !important;
 
 .v-light .box-seat.box-seat-full .pro-text h3 {
   color: #fff;
+  font-weight: 500;
 }
 
 .v-light .box-seat.box-seat-full .pro-text .link-custom a {
@@ -6189,6 +6191,7 @@ font-weight: 200 !important;
 
 .v-light .box-seat.box-seat-bottom .pro-text h3 {
   color: #000;
+  font-weight: 500;
 }
 
 .v-light .box-seat.box-seat-bottom .pro-text p {
@@ -6500,7 +6503,7 @@ font-weight: 200 !important;
 }
 
 .intro-about .intro-content-text .exper .numb-ex > span {
-  font-size: 120px;
+  font-size: 100px;
   line-height: 1.2;
   float: left;
   font-weight: 500;
@@ -9195,7 +9198,7 @@ font-weight: 200 !important;
   padding: 150px 0 120px 0;
 }
 
-.contenet-hero h1, .contenet-hero p, .contenet-hero a{
+.contenet-hero h1,.contenet-hero p, .contenet-hero a{
   color: white !important;
 }
 
@@ -9252,15 +9255,14 @@ font-weight: 200 !important;
 }
 
 .header-hero.header-hero-2 {
-  background-image: url(assets/img/project/project9/1.jpg);
-  background-color: teal;
+  background-image: url(../img/project/project9/1.jpg);
+  /* background-color: teal; */
   padding-top: 0;
   margin-bottom: 0;
   overflow: hidden;
 }
 
 .v-light .header-hero.header-hero-2 {
-  /* background-color:teal; */
   background-image: url(assets/img/project/project9/1.jpg);
 }
 
@@ -9274,7 +9276,7 @@ font-weight: 200 !important;
   bottom: 0;
   width: 100%;
   height: 30vw;
-  background-image: url(../img/circle-dotted.png);
+  background-image: url(../img/home.jpg);
   background-size: contain;
   opacity: .02;
   background-repeat: no-repeat;
@@ -9288,7 +9290,7 @@ font-weight: 200 !important;
   line-height: 1.2;
   margin-top: 0;
   font-size: 65px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11773,6 +11775,7 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
   height: 100%;
   padding: 30px;
   color: white !important;
+  font-weight: 300;
 }
 
 .v-light .box-info-contact {
@@ -11796,6 +11799,7 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
 .box-info-contact h3 {
   margin-bottom: 30px;
   color: white !important;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11809,6 +11813,7 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
   margin-bottom: 30px;
   line-height: 1.6;
   color: white !important;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11830,7 +11835,7 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
 
 .box-info-contact ul li span {
   color: #fff !important;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 13px;
   text-transform: uppercase;
   min-width: 120px;
@@ -12379,7 +12384,7 @@ footer .copyright-social ul li:last-child {
   position: relative;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 15px;
   padding-bottom: 10px;
   margin-bottom: 25px;
@@ -12802,6 +12807,6 @@ footer .copyright-social ul li:last-child {
 .pricing h2{
   font-weight: 500;
   line-height: 1.6;
-  color: mediumpurple;
+  /* color: mediumpurple; */
 }
 /*# sourceMappingURL=style.css.map */
