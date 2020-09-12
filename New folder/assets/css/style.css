@@ -1689,8 +1689,8 @@ body > * {
 }
 
 .one-title {
-  width: 620px;
   margin-bottom: 70px;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1761,7 +1761,7 @@ body > * {
 }
 
 .one-title .title-main {
-  font-size: 42px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -2991,7 +2991,7 @@ a:hover, a:active {
   -webkit-animation: shine 1s infinite;
   animation: shine 1s infinite;
   line-height: 15px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .site-header .extend-container .main-navigation ul li a:hover {
@@ -3335,7 +3335,7 @@ body.hamburger-menu .header-top {
   display: inline-block;
   margin-left: 10px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   top: -21px;
   color: #fff;
   text-transform: uppercase;
@@ -3488,7 +3488,7 @@ body.hamburger-menu .header-top {
 }
 
 .v-light.menu-light .header-top .header-container .menu-icon__line {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .header-top .header-container .menu-icon:hover .menu-icon__line-left {
@@ -5570,6 +5570,10 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   padding-left: 0;
 }
 
+.box-info h6{
+  text-align: justify;
+}
+
 @media only screen and (max-width: 991px) {
   .box-gallery-vertical.box-gallery-vertical-order .box-info {
     padding-left: 30px;
@@ -5744,7 +5748,7 @@ font-weight: 200 !important;
 
 .our-services {
   position: relative;
-  background-color: mediumpurple;
+  background-color: #0d9a86;
   padding: 50px 0;
 }
 
@@ -6120,10 +6124,11 @@ font-weight: 200 !important;
 
 .v-light .box-seat .pro-text h3 {
   color: #000;
+  font-size: 18px;
 }
 
 .box-seat .pro-text p {
-  margin-left: 70px;
+  /* margin-left: 70px; */
   margin-top: 30px;
 }
 
@@ -6719,7 +6724,7 @@ font-weight: 200 !important;
 
 .our-services-2 .services-item .services-header h3 {
   letter-spacing: 2.5px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -7358,7 +7363,7 @@ font-weight: 200 !important;
 
 .v-light .our-news .item-new .content .background {
   /* background: #e6e6e6; */
-  background: mediumpurple;
+  background: #0d9a86;
 }
 
 .our-news .item-new .content h5 {
@@ -11779,7 +11784,7 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
 }
 
 .v-light .box-info-contact {
-  background-color: mediumpurple;
+  background-color: #0d9a86;
 }
 
 @media only screen and (max-width: 991px) {
@@ -12676,7 +12681,7 @@ footer .copyright-social ul li:last-child {
   margin-right: 20px;
   background: #fff;
   color: #6c748b;
-  border: #ecedf0 4px solid;
+  /* border: #ecedf0 4px solid; */
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -12801,12 +12806,58 @@ footer .copyright-social ul li:last-child {
 }
 
 .cell{
-  color:mediumpurple;
+  color:#0d9a86;
 }
 
 .pricing h2{
   font-weight: 500;
   line-height: 1.6;
-  /* color: mediumpurple; */
+  /* color: #0d9a86; */
+}
+
+.box-info span, .small-title span{
+  color: #0d9a86; 
+}
+
+.content h3{
+  color: #0d9a86;  
+  font-weight: 500;
+  font-size: 16px !important;
+}
+
+.openposition h3{
+  font-size: 24px;
+  margin: 20px 0px;
+  font-weight: 400;
+}
+
+.techie{
+  margin: 40px 0px;
+  
+}
+
+.techie li{
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 30px;
+}
+
+.joinuss{
+  margin-top: 20px;
+  background-color: #0d9a86;
+   border-radius: 5px;
+  padding: 15px 40px;
+   color: white;
+   font-size: 14px;
+   text-transform: uppercase;
+}
+
+.title-sub-container p{
+  color: #0d9a86;
+}
+
+.career {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
