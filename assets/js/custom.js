@@ -127,6 +127,7 @@
             arrows : false,
             dots : true,
             fade : true,
+            autoplay:true,
             cssEase : "linear",
         } );
 
@@ -135,6 +136,7 @@
             infinite : true,
             slidesToShow : 2,
             arrows : false,
+            autoplay:true,
             dots : true,
             responsive : [
 
@@ -886,6 +888,7 @@
                 return new Swiper( ".dsn-slider .slide-inner", {
                     speed : 1500,
                     allowTouchMove : true,
+                    autoplay: true,
                     resistanceRatio : 0.65,
                     navigation : {
                         nextEl : ".dsn-slider .control-nav .next-container",
@@ -1756,6 +1759,7 @@ function slick_client( wind ) {
         client_curs.slick( {
             slidesToShow : 1,
             slidesToScroll : 1,
+            autoplay:true,
             arrows : true,
             infinite : true,
             nextArrow : "<i class=\"fas fa-angle-right\"></i>",

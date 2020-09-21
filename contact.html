@@ -59,24 +59,18 @@
               <!-- <ul>
                   <li><a href="index.html">Main Demo</a></li>
                   <li><a href="one-page-3.html">One Page Three</a></li>
-                  <li><a href="one-page-4.html">One Page Four</a></li>
+                  <li><a href="webdesign.html">One Page Four</a></li>
               </ul> -->
             </li>
             <li>
               <a href="about.html">About</a>
-              <!-- <ul>
-                  <li><a href="slider.html">Slider</a></li>
-                  <li><a href="slider2.html">Slider two</a></li>
-                  <li><a href="slider3.html">Slider Three</a></li>
-              </ul> -->
+              
             </li>
             <li class="custom-drop-down">
               <a href="#">Services</a>
               <ul>
-                <li><a href="project-9.html">Work</a></li>
-                <li><a href="one-page-4.html">Service 1</a></li>
-                <!-- <li><a href="project-7.html">Header Two</a></li>
-                  <li><a href="project-5.html">Header Three</a></li> -->
+                <li><a href="service.html">Work</a></li>
+                <li><a href="webdesign.html">Service 1</a></li>
               </ul>
             </li>
             <li class="custom-drop-down">
@@ -119,10 +113,27 @@
 
         <div class="nav">
           <div class="inner">
-            <div class="nav__content">
-
-            </div>
-          </div>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="service.html">Services</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="careers.html">Career</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="careers.html">Blog</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
         </div>
         <div class="nav-content">
           <div class="inner-content">
@@ -149,7 +160,7 @@
             <div class="col-lg-6">
               <div class=" contenet-hero">
                 <h5>Let's Talk</h5>
-                <h1 style="color:black !important; font-weight: 400;">Contact</h1>
+                <h1>Start a New Project?</h1>
               </div>
             </div>
           </div>
@@ -162,8 +173,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="box-info-contact">
-                  <h3>Start a new project?</h3>
-                  <h5>Visit Us at</h5>
+                  <h3>Visit Us Here</h3>
                   <p>We are always happy to help you. We are here to Detangle your Knots. Feel free to contact us </p>
 
                   <ul>
@@ -186,15 +196,14 @@
               </div>
 
               <div class="col-lg-6">
-                <div class="form-box">
-                  <h3 style="font-weight: 300;">Write A Comment</h3>
+                <div class="form-box" id="contact">
+                  <h3 style="font-weight: 300;">Get a Quote!</h3>
                   <form id="contact-form" class="form" method="post" action="contact.php" data-toggle="validator">
                     <div class="messages"></div>
                     <div class="input__wrap controls">
                       <div class="form-group">
 
                         <div class="entry">
-                          <label>What's your name?</label>
                           <input id="form_name" type="text" name="name" placeholder="Type your name" required="required"
                             data-error="name is required.">
                         </div>
@@ -203,7 +212,6 @@
 
                       <div class="form-group">
                         <div class="entry">
-                          <label>What's your email address?</label>
                           <input id="form_email" type="email" name="email" placeholder="Type your Email Address"
                             required="required" data-error="Valid email is required.">
                         </div>
@@ -212,16 +220,19 @@
 
                       <div class="form-group">
                         <div class="entry">
-                          <label>What's up?</label>
                           <textarea id="form_message" class="form-control" name="message"
-                            placeholder="Tell us about you and the world" required="required"
+                            placeholder="Tell us about your Requirement" required="required"
                             data-error="Please,leave us a message."></textarea>
                         </div>
                         <div class="help-block with-errors"></div>
                       </div>
 
                       <div class="image-zoom" data-dsn="parallax">
-                        <button style="background-color: #0d9a86;">Send Message</button>
+                        <div class="link-custom" data-dsn-animate="up">
+                          <a class="image-zoom effect-ajax" href="contact.html" data-dsn="parallax">
+                              <span> Request Quote</span>
+                          </a>
+                      </div>
                       </div>
                     </div>
                   </form>

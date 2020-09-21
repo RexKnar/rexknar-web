@@ -59,7 +59,7 @@
                             <!-- <ul>
                                 <li><a href="index.html">Main Demo</a></li>
                                 <li><a href="one-page-3.html">One Page Three</a></li>
-                                <li><a href="one-page-4.html">One Page Four</a></li>
+                                <li><a href="webdesign.html">One Page Four</a></li>
                             </ul> -->
                         </li>
                         <li>
@@ -73,8 +73,8 @@
                         <li class="custom-drop-down">
                             <a href="#">Services</a>
                             <ul>
-                                <li><a href="project-9.html">Work</a></li>
-                                <li><a href="one-page-4.html">Service 1</a></li>
+                                <li><a href="service.html">Work</a></li>
+                                <li><a href="webdesign.html">Service 1</a></li>
                                 <!-- <li><a href="project-7.html">Header Two</a></li>
                                 <li><a href="project-5.html">Header Three</a></li> -->
                             </ul>
@@ -119,9 +119,26 @@
 
                 <div class="nav">
                     <div class="inner">
-                        <div class="nav__content">
-
-                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="service.html">Services</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="careers.html">Career</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="careers.html">Blog</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="nav-content">
@@ -145,10 +162,6 @@
 
             <div class="container intro-project section-margin" data-dsn="color">
                 <div class="intro-text text-center">
-                    <!-- <div class="title-cover" data-dsn-grid="move-section" data-dsn-opacity="0.3"
-                data-dsn-duration="170%" data-dsn-move="0%">
-                hello
-            </div> -->
                     <div class="inner">
                         <h2 data-dsn-animate="text" style="color: darkgray;">You are at right place</h2>
                     </div>
@@ -158,21 +171,25 @@
                         customer needs</p>
                 </div>
                 <center>
-                    <a class="btn image-zoom joinuss" data-dsn="parallax" href="#inus" role="button">Join Us</a>
-                   
+                    <div class="link-custom" data-dsn-animate="up">
+                        <a class="image-zoom effect-ajax" href="#section2" data-dsn="parallax">
+                            <span> Join Us</span>
+                        </a>
+                    </div>
                 </center>
+
             </div>
 
 
             <div class="box-seat section-margin">
                 <div class="container-fluid">
                     <div class="inner-img" data-dsn-grid="move-up">
-                        <img src="assets/img/pexels.jpg" alt="">
+                        <img src="assets/img/career/4691.jpg" alt="">
                     </div>
                     <div class="pro-text" data-dsn-grid="move-section">
-                        <h3 data-dsn-animate="text">Perks & Benefits</h3>
+                        <h3 data-dsn-animate="up">Perks & Benefits</h3>
                         <p data-dsn-animate="text">
-                        <ul>
+                        <ul data-dsn-animate="up">
                             <li>- Work from Home</li>
                             <li>- Flexible Working Hours</li>
                             <li>- Explore your Talents</li>
@@ -184,29 +201,30 @@
                 </div>
             </div>
 
-            <section class="our-team our-team-not-bg section-margin section-padding" >
+            <section class="our-team our-team-not-bg section-margin section-padding" id="section2">
                 <div class="container">
                     <div class="row">
                         <div class=" col-lg-6">
-                          <div class="openposition">
-                              <h3>Open Positions</h3> 
-                              <p> Sorry! We are not Hiring now.We will Notify once we have an Open position, Kindly sent us your details.</p>
+                            <div class="openposition" data-dsn-animate="up">
+                                <h3>Open Positions</h3>
+                                <p> Sorry! We are not Hiring now.We will Notify once we have an Open position, Kindly
+                                    sent us your details.</p>
 
-                          </div> 
-                          <div class="openposition"> 
-                              <h3>Internship Programme</h3>
-                              <ul>
-                                <li>- Angular Internship Programme</li>
-                                <li>- .Net Internship Programme</li>
-                                <li>- php Internship Programme</li>
-                                <li>- Android Internship Programme</li>
-                                <!-- <li>- Angular Internship Programme</li> -->
-                            </ul>
+                            </div>
+                            <div class="openposition" data-dsn-animate="up">
+                                <h3>Internship Programme</h3>
+                                <ul>
+                                    <li>- Angular Internship Programme</li>
+                                    <li>- .Net Internship Programme</li>
+                                    <li>- php Internship Programme</li>
+                                    <li>- Android Internship Programme</li>
+                                    <!-- <li>- Angular Internship Programme</li> -->
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-lg-6" >
+                        <div class="col-lg-6">
                             <div class="form-box">
-                                <h3 style="font-weight: 300;" id="inus">Join Us</h3>
+                                <h3 style="font-weight: 300;">Join Us</h3>
                                 <form id="contact-form" class="form" method="post" action="contact.php"
                                     data-toggle="validator">
                                     <div class="messages"></div>
@@ -214,7 +232,6 @@
                                         <div class="form-group">
 
                                             <div class="entry">
-                                                <label>What's your name?</label>
                                                 <input id="form_name" type="text" name="name"
                                                     placeholder="Type your name" required="required"
                                                     data-error="name is required.">
@@ -224,7 +241,6 @@
 
                                         <div class="form-group">
                                             <div class="entry">
-                                                <label>What's your email address?</label>
                                                 <input id="form_email" type="email" name="email"
                                                     placeholder="Type your Email Address" required="required"
                                                     data-error="Valid email is required.">
@@ -234,7 +250,6 @@
 
                                         <div class="form-group">
                                             <div class="entry">
-                                                <label>Why Join Us?</label>
                                                 <textarea id="form_message" class="form-control" name="message"
                                                     placeholder="Tell us about you" required="required"
                                                     data-error="Please,leave us a message."></textarea>
@@ -243,7 +258,8 @@
                                         </div>
 
                                         <div class="image-zoom" data-dsn="parallax">
-                                            <button href ="contact.html" style="background-color: #0d9a86;">Send Message</button>
+                                            <button href="contact.html" style="background-color: #0d9a86;">Send
+                                                Message</button>
                                         </div>
                                     </div>
                                 </form>
@@ -252,6 +268,8 @@
                     </div>
                 </div>
             </section>
+
+
 
 
             <footer class="footer">
@@ -331,12 +349,9 @@
                         </div>
                     </div>
 
-                    <div class="copyright">
+                    <div class="copyright" style="margin-bottom: 100px;">
                         <div class="text-center">
                             <p>© 2020, Rexknar Creative Solutions. All Rights Reserved</p>
-                            <!-- <div class="copright-text over-hidden">Designed by <a class="link-hover"
-                            data-hover-text="DSN Grid" href="#" target="_blank">DSN Grid</a>
-                    </div> -->
                         </div>
                     </div>
                 </div>
