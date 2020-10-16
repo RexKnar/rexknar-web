@@ -6531,11 +6531,10 @@ font-weight: 200 !important;
 }
 
 .intro-about .img-box {
-  /* position: relative; */
   width: 100%;
   height: 100%;
-  padding: 100px;
   float: right;
+  padding:0  50px;
 }
 
 .intro-about .img-box img {
@@ -12960,7 +12959,7 @@ footer .copyright-social ul li:last-child {
   border-bottom:  2px #076153 solid;
 }
 
-.web-design h1, .web-design h2{
+.web-design h1, .web-design h2, .web_design{
   color:#0d9a86;
 }
 
@@ -12972,7 +12971,7 @@ footer .copyright-social ul li:last-child {
   border-bottom:  2px rgb(77, 27, 177) solid;
 }
 
-.brand-ing h1, .brand-ing h2, .brand-ing{
+.brand-ing h1, .brand-ing h2, .brand_ing {
   color:#9536e5;
 }
 
@@ -12984,7 +12983,7 @@ footer .copyright-social ul li:last-child {
   border-bottom:  2px rgb(182, 55, 97) solid;
 }
 
-.ui-design h1, .ui-design h2, .ui-design{
+.ui-design h1, .ui-design h2, .ui_design{
   color:palevioletred;
 }
 
@@ -12996,7 +12995,7 @@ footer .copyright-social ul li:last-child {
   border-bottom:  2px #125463 solid;
 }
 
-.digital-marketing h1, .digital-marketing h2, .digital-marketing{
+.digital-marketing h1, .digital-marketing h2, .digital_marketing{
   color:#0d809a;
 }
 
