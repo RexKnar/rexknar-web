@@ -2038,4 +2038,29 @@ function initMap() {
 }
 
 
+window.onscroll = function() {scrollFunction()};
 
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+          $(".header-container").css("background" , "black");
+        }
+  
+        else{
+            $(".header-container").css("background" , "transparent");  	
+        }
+    })
+  })
+
+//   $(window).scroll(function(){
+// 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+// });
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//       document.getElementById("nav").style.top = "0";
+//     } else {
+//       document.getElementById("nav").style.top = "-50px";
+//     }
+//   }
