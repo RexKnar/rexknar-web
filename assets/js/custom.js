@@ -1535,6 +1535,9 @@
                 headerSmall.removeClass( "header-stickytop" );
                 $( "body" ).css( "paddingTop", 0 );
             }
+
+
+            
         } );
 
         var text_menu = $( ".header-top .header-container .menu-icon .text-menu" );
