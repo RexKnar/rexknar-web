@@ -587,6 +587,7 @@
 
         return {
             isMobile : function () {
+                
                 if ( navigator.userAgent.match( /Android/i )
                     || navigator.userAgent.match( /webOS/i )
                     || navigator.userAgent.match( /iPhone/i )
@@ -623,6 +624,7 @@
                 return false;
             },
             isScroller : function ( $print ) {
+                
                 if ( $print )
                     myScrollbar = document.querySelector( "#dsn-scrollbar" );
 
@@ -657,12 +659,14 @@
                 return Scrollbar.get( document.querySelector( $id ) );
             },
             getListener : function ( $obj ) {
+                
                 if ( $obj === undefined ) return;
                 var $this = this;
                 if ( $this.isScroller( true ) ) {
                     $this.getScrollbar().addListener( $obj );
                 } else {
                     wind.on( "scroll", $obj );
+                    
                 }
             },
             start : function () {
@@ -684,6 +688,7 @@
                 if ( this.isMobiles() )
                     dam = 0.02;
                 Scrollbar.init( myScrollbar, {
+                    
                     damping : dam,
                 } );
                 // this.commentScroll();
@@ -697,6 +702,7 @@
                 } );
             },
             menuScroll : function () {
+                
                 Scrollbar.init( document.querySelector( ".nav__content" ), {
                     damping : 0.05,
                 } );
@@ -1515,7 +1521,7 @@
         } );
 
         wind.on( "scroll", function () {
-
+            
             var bodyScroll = wind.scrollTop(),
                 headerSmall = $( ".site-header , .header-top" )
 
@@ -1523,15 +1529,16 @@
             var $ofContent = $( ".page-content" ).offset();
             var $top = 70;
             if ( $ofContent !== undefined ) {
+                console.log('4');
                 $top = $ofContent.top;
             }
             if ( bodyScroll > $top ) {
-
+                console.log('3');
                 headerSmall.addClass( "header-stickytop" );
                 $( ".sections" ).addClass( "body-pt" );
 
             } else {
-
+                console.log('2');
                 headerSmall.removeClass( "header-stickytop" );
                 $( "body" ).css( "paddingTop", 0 );
             }
@@ -1550,6 +1557,7 @@
         dsnGrid.convertTextWord( text_button, text_button, true );
         dsnGrid.convertTextWord( text_open, text_open, true );
         dsnGrid.convertTextWord( text_close, text_close, true );
+        console.log('1');
 
 
     }
