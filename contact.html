@@ -199,12 +199,9 @@
                 <div class="form-box" id="contact">
                   <h3 style="font-weight: 300;">Get a Quote!</h3>
                   <form id="contact-form" class="form" method="post" action="contact.php" data-toggle="validator">
-                    <div class="messages">
+                    <div class="messages" id="message">
                       
-                        <div class="alert alert-success alert-dismissable">
-                          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                          <span>inserted successfully</span> 
-                        </div>
+                        
                     </div>
                     <div class="input__wrap controls">
                       <div class="form-group">
@@ -212,6 +209,7 @@
                         <div class="entry">
                           <input id="form_name" type="text" name="name" placeholder="Type your name" required="required"
                             data-error="name is required.">
+                            <input type="hidden" name="type" value="0" >
                         </div>
                         <div class="help-block with-errors"></div>
                       </div>
@@ -232,12 +230,7 @@
                         </div>
                         <div class="help-block with-errors"></div>
                       </div>
-                      <div class="messages">
-                        <div class="alert alert-error alert-dismissable">
-                          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                         <span>Please Try again</span> 
-                        </div>
-                        </div>
+                      
                    
                       <div class="image-zoom" data-dsn="parallax">
                         <div class="link-custom" data-dsn-animate="up">
@@ -320,7 +313,7 @@
         </div>
     </footer>
     </div>
-    </div>
+    
   </main>
 
   <!-- Wait Loader -->

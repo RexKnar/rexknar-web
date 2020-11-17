@@ -14,8 +14,8 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO contact (`name`,`email` , `message`)
-VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['message']."')";
+$sql = "INSERT INTO contact (`name`,`email` , `message`, `type`)
+VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['message']."',".$_POST['type'].")";
 
 if (mysqli_query($conn, $sql)) {
     $output['type']="success";
@@ -24,9 +24,11 @@ if (mysqli_query($conn, $sql)) {
     $output['type']="error";
     $output['message']="Sorry! Something went wrong, Please try again.";
 
+
+
+
+}
 mysqli_close($conn);
 // return json_encode($output);
 echo json_encode($output);
-
-}
 ?>

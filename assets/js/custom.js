@@ -1809,6 +1809,8 @@ function contactValidator() {
                 url : url,
                 data : $( this ).serialize(),
                 success : function ( value ) {
+                    
+                    console.log(value);
                     var data=JSON.parse(value);
                     // data = JSON object that contact.php returns
 
@@ -1817,8 +1819,20 @@ function contactValidator() {
                     var messageText = data.message;
 
                     // let's compose Bootstrap alert box HTML
-                    var alertBox = "<div class=\"alert " + messageAlert + " alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>" + messageText + "</div>";
-
+                    
+                    if(data.type=='success')
+                    {
+                        var alertBox = "<div class=\"alert alert-success alert-dismissable\" id=\"message-success\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>\
+                    <span>Inserted Successfully</span> \
+                  </div>";
+                        // $('#message-success').show();
+                    }
+                    else{
+                        var alertBox = "<div class=\"alert alert-error alert-dismissable\" id=\"message-error\">\
+                        <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>\
+                       <span>Please Try again</span></div>";
+                        // $('#message-error').show();
+                    }
                     // If we have messageAlert and messageText
                     if ( messageAlert && messageText ) {
                         console.log(data.type);

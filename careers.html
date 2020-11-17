@@ -225,44 +225,49 @@
                         <div class="col-lg-6">
                             <div class="form-box">
                                 <h3 style="font-weight: 300;">Join Us</h3>
-                                <form id="career-form" class="form" method="post" action="contact.php"
-                                    data-toggle="validator">
-                                    <div class="messages"></div>
-                                    <div class="input__wrap controls">
-                                        <div class="form-group">
-
-                                            <div class="entry">
-                                                <input id="form_name" type="text" name="name"
-                                                    placeholder="Type your name" required="required"
-                                                    data-error="name is required.">
-                                            </div>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="entry">
-                                                <input id="form_email" type="email" name="email"
-                                                    placeholder="Type your Email Address" required="required"
-                                                    data-error="Valid email is required.">
-                                            </div>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="entry">
-                                                <textarea id="form_message" class="form-control" name="message"
-                                                    placeholder="Tell us about you" required="required"
-                                                    data-error="Please,leave us a message."></textarea>
-                                            </div>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-
-                                        <div class="image-zoom" data-dsn="parallax">
-                                            <button href="contact.html" style="background-color: #0d9a86;">Send
-                                                Message</button>
-                                        </div>
+                                <form id="contact-form" class="form" method="post" action="contact.php" data-toggle="validator">
+                                    <div class="messages" id="message">
+                                      
+                                        
                                     </div>
-                                </form>
+                                    <div class="input__wrap controls">
+                                      <div class="form-group">
+                
+                                        <div class="entry">
+                                          <input id="form_name" type="text" name="name" placeholder="Type your name" required="required"
+                                            data-error="name is required.">
+                                            <input type="hidden" name="type" value="1" >
+                                        </div>
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                
+                                      <div class="form-group">
+                                        <div class="entry">
+                                          <input id="form_email" type="email" name="email" placeholder="Type your Email Address"
+                                            required="required" data-error="Valid email is required.">
+                                        </div>
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                
+                                      <div class="form-group">
+                                        <div class="entry">
+                                          <textarea id="form_message" class="form-control" name="message"
+                                            placeholder="Tell us about your Requirement" required="required"
+                                            data-error="Please,leave us a message."></textarea>
+                                        </div>
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                      
+                                   
+                                      <div class="image-zoom" data-dsn="parallax">
+                                        <div class="link-custom" data-dsn-animate="up">
+                                          <button type="submit" class="image-zoom effect-ajax"  data-dsn="parallax">
+                                              <span> Request Quote</span>
+                                          </button>
+                                      </div>
+                                      </div>
+                                    </div>
+                                  </form>
                             </div>
                         </div>
                     </div>
