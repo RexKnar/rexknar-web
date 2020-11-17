@@ -13085,4 +13085,13 @@ footer .copyright-social ul li:last-child {
   background-color: red;
   border-radius: 10px;
 }
+
+.privacy p{
+  text-align: justify;
+}
+
+.privacy li{
+  margin-left: 30px;
+  line-height: 2;
+}
 /*# sourceMappingURL=style.css.map */
