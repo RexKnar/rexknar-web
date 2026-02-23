@@ -587,6 +587,7 @@
 
         return {
             isMobile : function () {
+                
                 if ( navigator.userAgent.match( /Android/i )
                     || navigator.userAgent.match( /webOS/i )
                     || navigator.userAgent.match( /iPhone/i )
@@ -623,6 +624,7 @@
                 return false;
             },
             isScroller : function ( $print ) {
+                
                 if ( $print )
                     myScrollbar = document.querySelector( "#dsn-scrollbar" );
 
@@ -657,12 +659,14 @@
                 return Scrollbar.get( document.querySelector( $id ) );
             },
             getListener : function ( $obj ) {
+                
                 if ( $obj === undefined ) return;
                 var $this = this;
                 if ( $this.isScroller( true ) ) {
                     $this.getScrollbar().addListener( $obj );
                 } else {
                     wind.on( "scroll", $obj );
+                    
                 }
             },
             start : function () {
@@ -684,6 +688,7 @@
                 if ( this.isMobiles() )
                     dam = 0.02;
                 Scrollbar.init( myScrollbar, {
+                    
                     damping : dam,
                 } );
                 // this.commentScroll();
@@ -697,6 +702,7 @@
                 } );
             },
             menuScroll : function () {
+                
                 Scrollbar.init( document.querySelector( ".nav__content" ), {
                     damping : 0.05,
                 } );
@@ -1515,7 +1521,7 @@
         } );
 
         wind.on( "scroll", function () {
-
+            
             var bodyScroll = wind.scrollTop(),
                 headerSmall = $( ".site-header , .header-top" )
 
@@ -1523,18 +1529,22 @@
             var $ofContent = $( ".page-content" ).offset();
             var $top = 70;
             if ( $ofContent !== undefined ) {
+                console.log('4');
                 $top = $ofContent.top;
             }
             if ( bodyScroll > $top ) {
-
+                console.log('3');
                 headerSmall.addClass( "header-stickytop" );
                 $( ".sections" ).addClass( "body-pt" );
 
             } else {
-
+                console.log('2');
                 headerSmall.removeClass( "header-stickytop" );
                 $( "body" ).css( "paddingTop", 0 );
             }
+
+
+            
         } );
 
         var text_menu = $( ".header-top .header-container .menu-icon .text-menu" );
@@ -1547,6 +1557,7 @@
         dsnGrid.convertTextWord( text_button, text_button, true );
         dsnGrid.convertTextWord( text_open, text_open, true );
         dsnGrid.convertTextWord( text_close, text_close, true );
+        console.log('1');
 
 
     }
@@ -1797,7 +1808,76 @@ function contactValidator() {
                 type : "POST",
                 url : url,
                 data : $( this ).serialize(),
-                success : function ( data ) {
+                success : function ( value ) {
+                    
+                    console.log(value);
+                    var data=JSON.parse(value);
+                    // data = JSON object that contact.php returns
+
+                    // we recieve the type of the message: success x danger and apply it to the
+                    var messageAlert = "alert-" + data.type;
+                    var messageText = data.message;
+
+                    // let's compose Bootstrap alert box HTML
+                    
+                    if(data.type=='success')
+                    {
+                        var alertBox = "<div class=\"alert alert-success alert-dismissable\" id=\"message-success\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>\
+                    <span>Inserted Successfully</span> \
+                  </div>";
+                        // $('#message-success').show();
+                    }
+                    else{
+                        var alertBox = "<div class=\"alert alert-error alert-dismissable\" id=\"message-error\">\
+                        <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>\
+                       <span>Please Try again</span></div>";
+                        // $('#message-error').show();
+                    }
+                    // If we have messageAlert and messageText
+                    if ( messageAlert && messageText ) {
+                        console.log(data.type);
+                        // inject the alert to .messages div in our form
+                        contact_form.find( ".messages" ).html( alertBox );
+                        // empty the form
+                        contact_form[ 0 ].reset();
+                    }
+                    // setTimeout( function () {
+                    //     contact_form.find( ".messages" ).html( "" );
+                    // }, 3000 );
+
+                },
+                error : function ( error ) {
+                    console.log( error );
+                },
+            } );
+            return false;
+        }
+    } );
+}
+
+
+
+
+
+function careerValidator() {
+    var career_form = $( "#career-form" );
+    if ( career_form < 1 ) {
+        return;
+    }
+    career_form.validator();
+    // when the form is submitted
+    career_form.on( "submit", function ( e ) {
+        // if the validator does not prevent form submit
+        if ( !e.isDefaultPrevented() ) {
+            var url = "contact.php";
+
+            // POST values in the background the the script URL
+            $.ajax( {
+                type : "POST",
+                url : url,
+                data : $( this ).serialize(),
+                success : function ( value ) {
+                    var data=JSON.parse(value);
                     // data = JSON object that contact.php returns
 
                     // we recieve the type of the message: success x danger and apply it to the
@@ -1809,14 +1889,15 @@ function contactValidator() {
 
                     // If we have messageAlert and messageText
                     if ( messageAlert && messageText ) {
+                        console.log(data.type);
                         // inject the alert to .messages div in our form
                         contact_form.find( ".messages" ).html( alertBox );
                         // empty the form
                         contact_form[ 0 ].reset();
                     }
-                    setTimeout( function () {
-                        contact_form.find( ".messages" ).html( "" );
-                    }, 3000 );
+                    // setTimeout( function () {
+                    //     contact_form.find( ".messages" ).html( "" );
+                    // }, 3000 );
 
                 },
                 error : function ( error ) {
@@ -2038,4 +2119,29 @@ function initMap() {
 }
 
 
+window.onscroll = function() {scrollFunction()};
 
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+          $(".header-container").css("background" , "black");
+        }
+  
+        else{
+            $(".header-container").css("background" , "transparent");  	
+        }
+    })
+  })
+
+//   $(window).scroll(function(){
+// 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+// });
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//       document.getElementById("nav").style.top = "0";
+//     } else {
+//       document.getElementById("nav").style.top = "-50px";
+//     }
+//   }

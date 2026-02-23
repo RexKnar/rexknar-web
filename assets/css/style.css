@@ -2922,7 +2922,7 @@ a:hover, a:active {
 }
 
 .site-header .extend-container .inner-header .main-logo {
-  width: 96px;
+  width: 100px;
   padding-top: 4px;
   position: relative;
   z-index: 9999;
@@ -3252,14 +3252,22 @@ body.hamburger-menu .header-top {
   z-index: 999;
 }
 
+.navbar-default{
+  background-color: transparent;
+}
+
+.nav-defalut.scrolled{
+  background-color:black;
+}
+
 .header-top .header-container {
   position: absolute;
   width: 100%;
   max-width: 2560px;
   padding: 22px 50px;
   margin: auto;
-  background-color: #090909;
-  height: 80px;
+  /* background-color: transparent; */
+  height: 100px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3288,7 +3296,7 @@ body.hamburger-menu .header-top {
 }
 
 .header-top .header-container .logo img {
-  width: 80px;
+  width: 100px;
 }
 
 .header-top .header-container .menu-icon {
@@ -4482,7 +4490,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 @media only screen and (max-width: 991px) {
   .v-light.nav-active .nav__list-item a {
-    color: #333;
+    color: #fff;
   }
 }
 
@@ -4620,6 +4628,11 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   font-family: "Montserrat", sans-serif;
   color: #fff;
 
+}
+
+.title-text-header-inner a {
+  font-weight: 50;
+  font-size: 44px;
 }
 
 .next-project .project-title .title-text-header .title-text-header-inner span {
@@ -12381,8 +12394,8 @@ footer .copyright-social ul li:last-child {
 } */
 
 .footer .footer-links {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -12420,15 +12433,30 @@ footer .copyright-social ul li:last-child {
   background-color: #fff;
 }
 
+
+.footer-block ul{
+  display: flex !important ;
+}
+
+.footer-arrange{
+  margin-top: 30px;
+
+}
+
+.footer-arrange ul li{
+  margin: 0 10px ;
+}
+
 .footer .footer-links .footer-block.col-menu ul li {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
   overflow: hidden;
+ 
 }
 
 .footer .footer-links .footer-block.col-menu ul li:last-of-type {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .footer .footer-links .footer-block.col-menu ul li a {
@@ -13031,4 +13059,30 @@ footer .copyright-social ul li:last-child {
   color:#da264f;
 }
 
+
+.close{
+  background: transparent !important;
+  font-size: 20px !important;
+  color: #fff !important
+  ;
+}
+
+.messages{
+  margin-bottom: 20px;
+ 
+}
+
+.messages span{
+  color: #fff;
+  font-size: 14px;
+}
+.alert-success{
+  background-color: #0d9a86;
+   border-radius: 10px;
+
+}
+.alert-error{
+  background-color: red;
+  border-radius: 10px;
+}
 /*# sourceMappingURL=style.css.map */

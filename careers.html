@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/img/favicon-01.ico" type="image/x-icon" />
 
     <!-- custom styles (optional) -->
     <link href="assets/css/plugins.css" rel="stylesheet" />
@@ -47,15 +47,15 @@
                 <div class="inner-header">
                     <div class="main-logo">
                         <a href="index.html">
-                            <img class="dark-logo" src="assets/img/logo-dark.png" alt="" />
-                            <img class="light-logo" src="assets/img/logo.png" alt="" />
+                            <img class="dark-logo" src="assets/img/weblogob.png" alt="" />
+                            <img class="light-logo" src="assets/img/weblogob.png" alt="" />
                         </a>
                     </div>
                 </div>
                 <nav class=" accent-menu main-navigation">
                     <ul class="extend-container">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.html" style="color: black;">Home</a>
                             <!-- <ul>
                                 <li><a href="index.html">Main Demo</a></li>
                                 <li><a href="one-page-3.html">One Page Three</a></li>
@@ -63,7 +63,7 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="about.html" style="color: black;">About</a>
                             <!-- <ul>
                                 <li><a href="slider.html">Slider</a></li>
                                 <li><a href="slider2.html">Slider two</a></li>
@@ -71,7 +71,7 @@
                             </ul> -->
                         </li>
                         <li>
-                            <a href="careers.html">career</a>
+                            <a href="careers.html" style="color: black;">career</a>
                             <!-- <ul>
                                 <li><a href="service.html">Work</a></li>
                                 <li><a href="webdesign.html">Service 1</a></li> -->
@@ -87,7 +87,7 @@
                             </ul>
                         </li> -->
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="contact.html" style="color: black;">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -97,8 +97,8 @@
             <div class="header-container">
                 <div class="logo main-logo">
                     <a href="index.html">
-                        <img class="dark-logo" src="assets/img/logo-dark.png" alt="" />
-                        <img class="light-logo" src="assets/img/logo.png" alt="" />
+                        <img class="dark-logo" src="assets/img/weblogob.png" alt="" />
+                        <img class="light-logo" src="assets/img/weblogob.png" alt="" />
                     </a>
                 </div>
 
@@ -207,8 +207,8 @@
                         <div class=" col-lg-6">
                             <div class="openposition" data-dsn-animate="up">
                                 <h3>Open Positions</h3>
-                                <p> Sorry! We are not Hiring now.We will Notify once we have an Open position, Kindly
-                                    sent us your details.</p>
+                                <p> Sorry! We are not Hiring now. We will Notify once we have an Open position, Kindly
+                                    send us your details.</p>
 
                             </div>
                             <div class="openposition" data-dsn-animate="up">
@@ -225,63 +225,70 @@
                         <div class="col-lg-6">
                             <div class="form-box">
                                 <h3 style="font-weight: 300;">Join Us</h3>
-                                <form id="contact-form" class="form" method="post" action="contact.php"
-                                    data-toggle="validator">
-                                    <div class="messages"></div>
-                                    <div class="input__wrap controls">
-                                        <div class="form-group">
-
-                                            <div class="entry">
-                                                <input id="form_name" type="text" name="name"
-                                                    placeholder="Type your name" required="required"
-                                                    data-error="name is required.">
-                                            </div>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="entry">
-                                                <input id="form_email" type="email" name="email"
-                                                    placeholder="Type your Email Address" required="required"
-                                                    data-error="Valid email is required.">
-                                            </div>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="entry">
-                                                <textarea id="form_message" class="form-control" name="message"
-                                                    placeholder="Tell us about you" required="required"
-                                                    data-error="Please,leave us a message."></textarea>
-                                            </div>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-
-                                        <div class="image-zoom" data-dsn="parallax">
-                                            <button href="contact.html" style="background-color: #0d9a86;">Send
-                                                Message</button>
-                                        </div>
+                                <form id="contact-form" class="form" method="post" action="contact.php" data-toggle="validator">
+                                    <div class="messages" id="message">
+                                      
+                                        
                                     </div>
-                                </form>
+                                    <div class="input__wrap controls">
+                                      <div class="form-group">
+                
+                                        <div class="entry">
+                                          <input id="form_name" type="text" name="name" placeholder="Type your name" required="required"
+                                            data-error="name is required.">
+                                            <input type="hidden" name="type" value="1" >
+                                        </div>
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                
+                                      <div class="form-group">
+                                        <div class="entry">
+                                          <input id="form_email" type="email" name="email" placeholder="Type your Email Address"
+                                            required="required" data-error="Valid email is required.">
+                                        </div>
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                
+                                      <div class="form-group">
+                                        <div class="entry">
+                                          <textarea id="form_message" class="form-control" name="message"
+                                            placeholder="Tell us about your Requirement" required="required"
+                                            data-error="Please,leave us a message."></textarea>
+                                        </div>
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                      
+                                   
+                                      <div class="image-zoom" data-dsn="parallax">
+                                        <div class="link-custom" data-dsn-animate="up">
+                                          <button type="submit" class="image-zoom effect-ajax"  data-dsn="parallax">
+                                              <span> Request Quote</span>
+                                          </button>
+                                      </div>
+                                      </div>
+                                    </div>
+                                  </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-
-
-
+            
             <footer class="footer">
                 <div class="container">
                     <div class="footer-links p-relative">
                         <div class="row">
-                            <div class="col-md-3 dsn-col-footer">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2 col-xs-12 dsn-col-footer">
                                 <div class="footer-block">
                                     <div class="footer-logo">
                                         <a href=""><img src="assets/img/logo.png" alt=""></a>
                                     </div>
+                                </div>
+                            </div>
 
+                            <div class="col-md-2 col-xs-12 dsn-col-footer">
+                                <div class="footer-block col-menu">
                                     <div class="footer-social">
 
                                         <ul>
@@ -296,56 +303,24 @@
                                         </ul>
 
                                     </div>
+
                                 </div>
                             </div>
 
-                            <div class="col-md-3 dsn-col-footer">
-                                <div class="footer-block col-menu">
-                                    <h4 class="footer-title">Navigation</h4>
-                                    <nav>
-                                        <ul>
-                                            <li><a href="#">HOME</a>
-                                            </li>
-                                            <li><a href="#">About</a></li>
-                                            <li><a href="#">SERVICES</a></li>
-                                            <li><a href="careers.html">CAREERS</a></li>
-                                            <li><a href="#">BLOG</a></li>
-                                            <li><a href="#">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 dsn-col-footer">
-                                <div class="footer-block col-menu">
-                                    <h4 class="footer-title">SUPPORT</h4>
+                            <div class="col-md-4 col-xs-12 dsn-col-footer">
+                                <div class="footer-block footer-arrange col-menu">
                                     <ul>
-                                        <li><a href="#">TERMS OF USE</a>
+                                        <li><a href="index.html">Home</a>
                                         </li>
-                                        <li><a href="#">PRIVACY POLICY</a></li>
-                                        <li><a href="#">COOKIE POLICY</a></li>
-                                        <li><a href="#">SITEMAP</a>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="careers.html">Career</a></li>
+                                        <li><a href="contact.html">Contact</a>
                                         </li>
                                     </ul>
 
                                 </div>
                             </div>
-
-                            <div class="col-md-3 dsn-col-footer">
-                                <div class="footer-block col-menu">
-                                    <h4 class="footer-title">SERVICES</h4>
-                                    <ul>
-                                        <li><a href="#">TERMS OF USE</a>
-                                        </li>
-                                        <li><a href="#">PRIVACY POLICY</a></li>
-                                        <li><a href="#">COOKIE POLICY</a></li>
-                                        <li><a href="#">SITEMAP</a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
+                            <div class="col-md-2"></div>
                         </div>
                     </div>
 
